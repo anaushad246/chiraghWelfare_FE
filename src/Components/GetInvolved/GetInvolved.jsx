@@ -80,7 +80,7 @@ function GetInvolved() {
             className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
           />
         </div>
-        <div>
+        {/* <div>
           <label htmlFor="DOB" className="block text-lg font-medium text-gray-700">Date of Birth:</label>
           <input
             type="date"
@@ -90,7 +90,7 @@ function GetInvolved() {
             onChange={handleChange}
             className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
           />
-        </div>
+        </div> */}
         <div>
           <label htmlFor="address" className="block text-lg font-medium text-gray-700">Address:</label>
           <textarea

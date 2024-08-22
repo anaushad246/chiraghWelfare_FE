@@ -32,8 +32,10 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="bg-gradient-to-r from-blue-500 to-teal-500 shadow-lg pb-4 w-[100vw]">
-      <div className=" w-full px-4 flex flex-row items-center justify-between lg:justify-evenly md:gap-0 p-2 h-fit fixed top-0 left-0 right-0 z-50 md:static  bg-gradient-to-r from-blue-500 to-teal-500 shadow-lg">
+    <header className="bg-gradient-to-r from-blue-500 to-teal-500 shadow-lg pb-4 ">
+      <div className=" mr-0 pr-2 flex flex-row items-center justify-around 
+      lg:justify-evenly md:gap-0 p-2 h-fit fixed top-0 left-0 right-0 z-50 md:static 
+       bg-gradient-to-r from-blue-500 to-teal-500 shadow-lg">
   {/* Logo */}
   <div className="flex flex-row items-center">
     <img

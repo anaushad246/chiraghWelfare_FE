@@ -5,6 +5,7 @@ import OurTeam from './OurTeam';
 import OurHistory from './OurHistory';
 import Ourvision from './Ourvision';
 import Objectives from './Objectives';
+import Messages from './Messages';
 
 const AboutUs = () => {
   return (
@@ -17,9 +18,7 @@ const AboutUs = () => {
           <li className="border">
             <a href="#WhoWeAre" className="hover:text-yellow-400 transition-colors duration-300 p-2 block">Who We Are</a>
           </li>
-          <li className="border">
-            <a href="#OurHistory" className="hover:text-yellow-400 transition-colors duration-300 p-2 block">Our History</a>
-          </li>
+          
           <li className="border">
             <a href="#OurVision" className="hover:text-yellow-400 transition-colors duration-300 p-2 block">Our Vision</a>
           </li>
@@ -29,6 +28,9 @@ const AboutUs = () => {
           <li className="border">
             <a href="#OurTeam" className="hover:text-yellow-400 transition-colors duration-300 p-2 block">Our Team</a>
           </li>
+          <li className="border">
+            <a href="#messages" className="hover:text-yellow-400 transition-colors duration-300 p-2 block">Messages</a>
+          </li>
         </ul>
       </nav>
 
@@ -37,9 +39,7 @@ const AboutUs = () => {
         <WhoWeAreCard />
       </section>
 
-      {/* <section id="OurHistory" className=" ">
-        <OurHistory />
-      </section> */}
+      
 
       <section id="OurVision" className="">
         <Ourvision />
@@ -51,6 +51,9 @@ const AboutUs = () => {
 
       <section id="OurTeam" className=" ">
         <OurTeam />
+      </section>
+      <section id="messages" className=" ">
+        <Messages />
       </section>
 
     </div>

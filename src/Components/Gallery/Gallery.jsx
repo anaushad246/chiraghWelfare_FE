@@ -1,25 +1,58 @@
-import React from 'react'
+import React from 'react';
+import { Gallery } from "react-grid-gallery";
+import Events from '../Events/Events';
 
-function Gallery() {
+function MyGallery() {
+  const images = [
+    {
+       src: "/src/assets/HelpingHand.jpg",
+       width: 320,
+       height: 174,
+       isSelected: true,
+       caption: "After Rain ",
+    },
+    {
+       src: "/src/assets/Counselling.jpg",
+       width: 320,
+       height: 212,
+       tags: [
+          { value: "Ocean", title: "Ocean" },
+          { value: "People", title: "People" },
+       ],
+       alt: "Boats (Jeshu John - designerspics.com)",
+    },
+    {
+       src: "src/assets/DarUlFalah.jpg",
+       width: 320,
+       height: 212,
+    },
+    {
+      src: "src/assets/Disaster.jpg",
+       width: 320,
+       height: 212,
+    },
+    {src: "src/assets/HandPump.jpg",
+      width: 320,
+      height: 212,},
+    {src: "src/assets/HealthCare.jpg",
+      width: 320,
+      height: 212,},
+    {src: "src/assets/HelpingHand.jpg",
+      width: 320,
+      height: 212,
+      tags: [
+        { value: "HelpingHand", title: "Ocean" },
+        { value: "People", title: "People" },
+     ]},
+  ];
+
   return (
-    <section className="space-y-6 p-2 pt-6 flex flex-col gap-2 items-center w-[100vw]">
-        <h2 className="text-4xl font-bold text-gray-800">Gallery</h2>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-          <div className=" w-full h-48 bg-gray-300 rounded-lg overflow-hidden shadow-lg">
-            <img src="path_to_image1.jpg" alt="Gallery Image 1" className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"/>
-          </div>
-          <div className="relative w-full h-48 bg-gray-300 rounded-lg overflow-hidden shadow-lg">
-            <img src="path_to_image2.jpg" alt="Gallery Image 2" className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"/>
-          </div>
-          <div className="relative w-full h-48 bg-gray-300 rounded-lg overflow-hidden shadow-lg">
-            <img src="path_to_image3.jpg" alt="Gallery Image 3" className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"/>
-          </div>
-          <div className="relative w-full h-48 bg-gray-300 rounded-lg overflow-hidden shadow-lg">
-            <img src="path_to_image4.jpg" alt="Gallery Image 4" className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"/>
-          </div>
-        </div>
-      </section>
-  )
+    <section className="text-center py-4 bg-gray-100 rounded-lg shadow-md">
+      <div><h2 className="text-2xl font-bold text-gray-800 mb-4">Image Gallery</h2>
+      <Gallery images={images} /></div>
+      <div><Events /></div>
+    </section>
+  );
 }
 
-export default Gallery
+export default MyGallery;

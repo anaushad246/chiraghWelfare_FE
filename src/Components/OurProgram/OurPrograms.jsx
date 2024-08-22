@@ -71,7 +71,7 @@ const OurPrograms = () => {
   const [activeProgram, setActiveProgram] = React.useState(null);
 
   return (
-    <div className=" bg-[#005467] py-4 px-2 flex flex-col  justify-center items-center w-[100vw]">
+    <div className=" bg-[#005467] text-[#CCCCCC] py-4 px-2 flex flex-col  justify-center items-center w-[100vw]">
       <h2 className="text-3xl font-bold p-4">Our Programs</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-center">
         {programs.map((program) => (

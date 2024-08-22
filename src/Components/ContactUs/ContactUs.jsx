@@ -11,7 +11,7 @@ function ContactUs() {
     const formData = { name, email, message };
 
     try {
-      const response = await axios.post('https://chiraghwelfare-be.onrender.com/api/submit-contactUs', formData);
+      const response = await axios.post('/api/submit-contactUs', formData);
 
       if (response.status === 200) {  // Adjusted to check for status 200
         console.log('Form submitted successfully');

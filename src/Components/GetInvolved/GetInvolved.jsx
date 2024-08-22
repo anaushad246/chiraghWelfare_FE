@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 function GetInvolved() {
+  const [formType, setFormType] = useState('membership'); // Default form is 'membership'
   const [formData, setFormData] = useState({
     name: '',
     fatherName: '',
@@ -23,7 +24,6 @@ function GetInvolved() {
     try {
       // Send data to the backend
       const response = await axios.post('/api/submit-getInvolved', formData);
-
       console.log('Form submitted successfully:', response.data);
       // Optionally, handle successful submission (e.g., show a success message)
     } catch (error) {
@@ -35,6 +35,21 @@ function GetInvolved() {
   return (
     <div className="container mx-auto p-4 bg-gray-100 rounded-lg shadow-md">
       <h1 className="text-3xl font-bold mb-6 text-center text-blue-600">Get Involved</h1>
+      <div className="flex justify-center mb-6">
+        <button
+          onClick={() => setFormType('membership')}
+          className={`mr-4 px-4 py-2 font-semibold rounded-md shadow-md ${formType === 'membership' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-800'}`}
+        >
+          Membership Form
+        </button>
+        <button
+          onClick={() => setFormType('volunteer')}
+          className={`px-4 py-2 font-semibold rounded-md shadow-md ${formType === 'volunteer' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-800'}`}
+        >
+          Volunteer Form
+        </button>
+      </div>
+
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label htmlFor="name" className="block text-lg font-medium text-gray-700">Name:</label>
@@ -102,10 +117,14 @@ function GetInvolved() {
             className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
           />
         </div>
-        <div>
-          <label className="block text-lg font-medium text-gray-700">Membership Charge:</label>
-          <p className="mt-1 text-gray-600">Rs.100/- (Via Debit Card, Credit Card etc.)</p>
-        </div>
+        
+        {formType === 'membership' && (
+          <div>
+            <label className="block text-lg font-medium text-gray-700">Membership Charge:</label>
+            <p className="mt-1 text-gray-600">Rs.100/- (Via Debit Card, Credit Card etc.)</p>
+          </div>
+        )}
+
         <div className="text-center">
           <button type="submit" className="mt-4 px-4 py-2 bg-blue-600 text-white font-semibold rounded-md shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75">
             Submit

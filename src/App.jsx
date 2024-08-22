@@ -15,18 +15,23 @@ import Gallery from './Components/Gallery/Gallery'
 import GetConnected from './Components/Footer/GetConnected'
 import WhoWeAreCard from './Components/About Us/WhoWeAre'
 
+import MyGallery from './Components/Gallery/Gallery'
+
+
+
 function App() {
   return (
     
       <Router>
      {/* <div className='p-2 bg-black flex justify-center '> <GetConnected /></div> */}
       <Header />
+      
 
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path='/aboutUs' element={<AboutUs />} />
         <Route path='/getInvolved' element={<GetInvolved />} />
-        <Route path='/gallery' element={<Gallery />} />
+        <Route path='/gallery' element={<MyGallery />} />
         <Route path='/Donate' element={<Donate />} />
         <Route path='/contactUs' element={<ContactUs />} />
         <Route path='/WhoWeAre' element={<WhoWeAreCard />} />

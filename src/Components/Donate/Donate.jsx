@@ -41,6 +41,10 @@ function Donate() {
       <p className="text-lg font-bold text-blue-700">₹40,000</p>
     </li>
     <li className="w-full md:w-1/2 xl:w-1/3  md:mb-0">
+      <h3 className="text-lg font-semibold ">Home Industries</h3>
+      <p className="text-lg font-bold text-blue-700">₹50,000</p>
+    </li>
+    <li className="w-full md:w-1/2 xl:w-1/3  md:mb-0">
       <h3 className="text-lg font-semibold ">Establish School, College, Hostel, Hospital, Research Centres:</h3>
       <p className="text-lg font-bold text-blue-700">₹40,00,000 to ₹1,00,00,000</p>
     </li>

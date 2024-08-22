@@ -11,6 +11,7 @@ import Donate from './Components/Donate/Donate'
 import Footer from './Components/Footer/Footer'
 import WhoWeAreCard from './Components/About Us/WhoWeAre'
 import MyGallery from './Components/Gallery/Gallery'
+import ProgramDetail from './Components/OurProgram/ProgramDetail'
 
 
 
@@ -28,6 +29,7 @@ function App() {
         <Route path='/Donate' element={<Donate />} />
         <Route path='/contactUs' element={<ContactUs />} />
         <Route path='/WhoWeAre' element={<WhoWeAreCard />} />
+        <Route path="/programs/:id" element={<ProgramDetail />} />
       </Routes>
 
       <Footer />

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import logo1 from '/src/assets/logo1.jpg'; // Ensure this path is correct
 
 
@@ -33,8 +33,7 @@ const Header = () => {
 
   return (
     <header className="bg-gradient-to-r from-blue-500 to-teal-500 shadow-lg pb-4 ">
-      <div className=" mr-0 pr-2 flex flex-row items-center justify-around 
-      lg:justify-evenly md:gap-0 p-2 h-fit fixed top-0 left-0 right-0 z-50 md:static 
+      <div className=" flex flex-row items-center justify-around lg:justify-evenly md:gap-0 p-2 h-fit fixed top-0 left-0 right-0 z-50 md:static 
        bg-gradient-to-r from-blue-500 to-teal-500 shadow-lg">
   {/* Logo */}
   <div className="flex flex-row items-center">
@@ -47,7 +46,7 @@ const Header = () => {
 
   {/* Navigation Menu */}
   <nav
-    ref={menuRef}
+    // ref={menuRef}
     className={`${
       isOpen ? 'block' : 'hidden'
     } absolute top-16 lg:top-8  left-0 right-0 bg-gray-800 md:bg-inherit md:static  md:flex md:flex-row md:gap-2 p-4  md:p-2   md:mt-0 justify-center z-10`}
@@ -88,7 +87,10 @@ const Header = () => {
     onClick={toggleMenu}
     aria-label="Toggle navigation menu"
   >
-    <FontAwesomeIcon icon={faBars} className="text-2xl" />
+    {/* <FontAwesomeIcon icon={faBars} className="text-2xl" /> */}
+    {
+      isOpen ? <FontAwesomeIcon icon={faXmark}  className='text-2xl'/> : <FontAwesomeIcon icon={faBars} className="text-2xl" />
+    }
   </button>
 
   {/* Donate Button */}

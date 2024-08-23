@@ -13,8 +13,8 @@ function ContactUs() {
     const formData = { name, email, message };
 
     try {
-      const response = await axios.post('/api/submit-contactUs', formData);
-
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/submit-contactUs`, formData);
+// '/api/submit-contactUs'
       if (response.status === 200) {
         console.log('Form submitted successfully');
         setSubmitted(true);

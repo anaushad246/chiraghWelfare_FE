@@ -8,13 +8,13 @@ const programs = [
     {
       id: 2,
       name: 'Dar-ul-Falah',
-      image: '/src/assets/DarUlFalah.jpg',
+      image: '/DarUlFalah.jpg',
       content: `An institution established by CWF to offer assistance to the less fortunate members of our community, including orphans and those in poverty, through our Help the Poor and Orphans services. We offer one-on-one and group classes, and our curriculum covers everything from basic knowledge, training, daily life skills, and vocabulary to advanced studies. The two-hour madarsa covers all basic subjects for their rehearsal and enhances knowledge. Our goal is to provide a supportive and engaging environment for students to develop their knowledge and skill-based education.`,
     },
     {
       id: 3,
       name: 'Counselling',
-      image: '/src/assets/Counselling.jpg',
+      image: '/Counselling.jpg',
       content: `Educational counselling serves as a catalyst for academic success, personal growth, and career exploration. By offering personalized guidance, tailored support, and early intervention, educational counsellors empower students to overcome challenges, make informed decisions, and unlock their full potential. Educational counselling mainly refers to providing assistance and guidance to students in making the right choices in their studies, be it their educational plans, career aspirations, choice of stream and specialization, as well as the selection of a college or university as per their interests and preferences.`,
     },
     {

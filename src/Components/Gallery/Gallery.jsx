@@ -5,14 +5,14 @@ import Events from '../Events/Events';
 function MyGallery() {
   const images = [
     {
-       src: "/src/assets/HelpingHand.jpg",
+       src: "/HelpingHand.jpg",
        width: 320,
        height: 174,
        isSelected: true,
        caption: "After Rain ",
     },
     {
-       src: "/src/assets/Counselling.jpg",
+       src: "/Counselling.jpg",
        width: 320,
        height: 212,
        tags: [
@@ -22,22 +22,22 @@ function MyGallery() {
        alt: "Boats (Jeshu John - designerspics.com)",
     },
     {
-       src: "src/assets/DarUlFalah.jpg",
+       src: "/DarUlFalah.jpg",
        width: 320,
        height: 212,
     },
     {
-      src: "src/assets/Disaster.jpg",
+      src: "/Disaster.jpg",
        width: 320,
        height: 212,
     },
-    {src: "src/assets/HandPump.jpg",
+    {src: "/HandPump.jpg",
       width: 320,
       height: 212,},
-    {src: "src/assets/HealthCare.jpg",
+    {src: "/HealthCare.jpg",
       width: 320,
       height: 212,},
-    {src: "src/assets/HelpingHand.jpg",
+    {src: "/HelpingHand.jpg",
       width: 320,
       height: 212,
       tags: [

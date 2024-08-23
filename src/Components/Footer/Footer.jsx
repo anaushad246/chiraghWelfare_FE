@@ -47,13 +47,14 @@ function Footer() {
       <a href="tel:+7654746192">7654746192</a>
     </div>
   </div>
-  <div className="bg-neutral-200 p-2 text-center dark:bg-neutral-700 ">
+  
+
+  </div>
+  <div className="bg-neutral-200 p-2 text-center dark:bg-neutral-700 mt-4 w-screen">
     <span> 2024 &copy; </span>
     <a href="#" className="font-normal text-neutral-600 dark:text-neutral-400">
       Chirag Welfare Foundation
     </a>
-  </div>
-
   </div>
     </footer>
   );

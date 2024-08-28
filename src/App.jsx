@@ -18,7 +18,7 @@ import ProgramDetail from './Components/OurProgram/ProgramDetail'
 function App() {
   return (
     
-      <Router>
+      <Router scrollToTop>
       <Header />
       
       <Routes>

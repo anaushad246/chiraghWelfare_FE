@@ -13,9 +13,14 @@ function Home() {
   return (
     
       <div className=" bg-gray-100 w-screen  ">
-        <Marquee pauseOnHover='true'>
-  <a href="#" className='animate-pulse'>I can be a React component</a>
-      </Marquee>
+        <Marquee pauseOnHover='true' direction='left' className='text-lg font-bold '>
+  <a href="#" className='hover:text-blue-800'>For spot admission under 'KALAM SCHOLARSHIP' contact at 
+    <a href="tel:+7654746192" className='text-orange-500 hover:text-orange-700'>
+      <span>7654746192</span>
+    </a>
+  </a>
+  &nbsp;&nbsp;&nbsp;
+</Marquee>
       <Quote />
       <WelcomeNote />
       <UpdateSection />

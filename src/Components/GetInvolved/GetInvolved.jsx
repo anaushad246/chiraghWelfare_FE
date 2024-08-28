@@ -23,7 +23,7 @@ function GetInvolved() {
     e.preventDefault();
     try {
       // Send data to the backend
-      const response = await axios.post('/api/submit-getInvolved', formData);
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/submit-contactUs`, formData);
       console.log('Form submitted successfully:', response.data);
       // Optionally, handle successful submission (e.g., show a success message)
     } catch (error) {
@@ -95,17 +95,13 @@ function GetInvolved() {
             className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
           />
         </div>
-        {/* <div>
-          <label htmlFor="DOB" className="block text-lg font-medium text-gray-700">Date of Birth:</label>
-          <input
-            type="date"
-            name="DOB"
-            id="DOB"
-            value={formData.DOB}
-            onChange={handleChange}
-            className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-          />
-        </div> */}
+        <div>
+          {/* <label htmlFor="DOB" className="block text-lg font-medium text-gray-700">Date of Birth:</label> */}
+          <select name="type" id="type">
+            <option value="Member">Member</option>
+            <option value="volentear">Volentear</option>
+          </select>
+        </div>
         <div>
           <label htmlFor="address" className="block text-lg font-medium text-gray-700">Address:</label>
           <textarea

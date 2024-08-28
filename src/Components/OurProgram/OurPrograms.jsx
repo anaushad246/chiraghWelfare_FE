@@ -12,7 +12,7 @@ const OurPrograms = () => {
             <img
               src={program.image}
               alt={program.name}
-              className="w-full h-52 object-cover"
+              className="w-full h-auto object-contain"
             />
             <Link to={`/programs/${program.id}`}>
               <h3 className="text-lg font-bold">{program.name}</h3>

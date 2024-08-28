@@ -12,13 +12,15 @@ import Footer from './Components/Footer/Footer'
 import WhoWeAreCard from './Components/About Us/WhoWeAre'
 import MyGallery from './Components/Gallery/Gallery'
 import ProgramDetail from './Components/OurProgram/ProgramDetail'
+import ScrollToTop from './Components/ScrollToTop'
 
 
 
 function App() {
   return (
     
-      <Router scrollToTop>
+      <Router >
+        <ScrollToTop />
       <Header />
       
       <Routes>

@@ -50,7 +50,7 @@ function MyGallery() {
     <section className="text-center py-4 bg-gray-100 rounded-lg shadow-md">
       <div><h2 className="text-2xl font-bold text-gray-800 mb-4">Image Gallery</h2>
       <Gallery images={images} /></div>
-      <div><Events /></div>
+      {/* <div><Events /></div> */}
     </section>
   );
 }

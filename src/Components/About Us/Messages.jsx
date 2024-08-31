@@ -2,12 +2,12 @@ import React from 'react';
 
 const messages = [
   {
-    name: 'John Doe',
-    role: 'Founder, ABC Foundation',
+    name: 'Dr Mahboob Alam',
+    role: '',
     message: 'We are deeply grateful for the support of Chiragh Welfare Foundation in our community development projects.',
   },
   {
-    name: 'Jane Smith',
+    name: 'An',
     role: 'Volunteer',
     message: 'Working with Chiragh Welfare Foundation has been a rewarding experience, making a real difference in people’s lives.',
   },

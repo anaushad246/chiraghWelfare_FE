@@ -95,13 +95,13 @@ function GetInvolved() {
             className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
           />
         </div>
-        <div>
+        {/* <div> */}
           {/* <label htmlFor="DOB" className="block text-lg font-medium text-gray-700">Date of Birth:</label> */}
-          <select name="type" id="type">
+          {/* <select name="type" id="type">
             <option value="Member">Member</option>
             <option value="volentear">Volentear</option>
           </select>
-        </div>
+        </div> */}
         <div>
           <label htmlFor="address" className="block text-lg font-medium text-gray-700">Address:</label>
           <textarea
@@ -127,6 +127,11 @@ function GetInvolved() {
           </button>
         </div>
       </form>
+      {/* {submitted && (
+        <div className="text-center mt-6">
+          <p className="text-lg text-green-600 font-bold">Thank you for submitting the form</p>
+        </div>
+      )} */}
     </div>
   );
 }

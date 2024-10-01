@@ -18,6 +18,7 @@ function Home() {
     <a href="tel:+7654746192" className='text-orange-500 hover:text-orange-700'>
       <span>7654746192</span>
     </a>
+     ** Donate for Flood relief in Bihar ** 
   </a>
   &nbsp;&nbsp;&nbsp;
 </Marquee>

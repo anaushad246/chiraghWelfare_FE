@@ -11,7 +11,7 @@ const Updates = () => {
       <h2 className="text-2xl font-bold text-gray-800 "> Updates</h2>
       
   <a href="#" className="text-blue-600 font-bold blink">
-    Join us today to help the cause.
+    Donate for flood effected peoples
   </a>
 
    <div className='p-4'><UpdatesList /></div>

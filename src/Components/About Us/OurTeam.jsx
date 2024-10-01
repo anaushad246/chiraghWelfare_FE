@@ -23,7 +23,7 @@ function OurTeam() {
             {[
               { name: "MOHD WAJHUL QAMAR", designation: "President" },
               { name: "MD BADIUZZAMAN", designation: "Vice President" },
-              { name: "SANAULLAH SIDDIQUI", designation: "Member" },
+              { name: "SANAULLAH SIDDIQUI", designation: "BIHAR CO-CONVENER" },
               // { name: 'QUAMAR HUSNAIN', designation: 'Joint Secretary' },
               { name: "MD JAMAL SARIF", designation: "Member" },
               { name: "SHAHNAWAZ AHMAD", designation: "Co-Treasurer" },

@@ -3,11 +3,11 @@ import React from 'react';
 const messages = [
   {
     name: 'Dr Mahboob Alam',
-    role: '',
+    role: 'chairman Brilliant Educational and Social Trust(BEST)',
     message: 'We are deeply grateful for the support of Chiragh Welfare Foundation in our community development projects.',
   },
   {
-    name: 'An',
+    name: 'Shahnawaz Alam',
     role: 'Volunteer',
     message: 'Working with Chiragh Welfare Foundation has been a rewarding experience, making a real difference in people’s lives.',
   },

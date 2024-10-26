@@ -8,11 +8,14 @@ import UpdateSection from '../Updates/Updates';
 import Marquee from 'react-fast-marquee';
 import NewsSlider from '../NewsSlider/NewsSlider';
 import Events from '../Events/Events';
+import VisitorCounter from '../visitorCounter/VisitorCounter';
+
 
 function Home() {
   return (
     
       <div className=" bg-gray-100 w-screen  ">
+        
         <Marquee pauseOnHover='true' direction='left' className='text-lg font-bold '>
   <a href="#" className='hover:text-blue-800'>For spot admission under 'KALAM SCHOLARSHIP' contact at 
     <a href="tel:+7654746192" className='text-orange-500 hover:text-orange-700'>
@@ -47,6 +50,7 @@ function Home() {
             <p className="text-base text-gray-700">“No matter how big or small, your donation can make a difference.”</p>
           </div>
         </div>
+        <VisitorCounter />
         
       </div>
     

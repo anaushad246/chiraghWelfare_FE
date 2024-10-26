@@ -1,0 +1,19 @@
+.visitor-counter-container {
+    background-image: url('https://example.com/your-amazing-background.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 50px;
+    border-radius: 15px;
+    /* color: white; */
+  }
+  
+  .visitor-counter-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .visitor-counter-number {
+    font-size: 5em;
+    font-weight: bold;
+  }
+  

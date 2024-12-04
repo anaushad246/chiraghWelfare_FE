@@ -21,7 +21,7 @@ function Quote() {
     <div className="bg-gray-800 bg-opacity-50 pt-8 px-4 rounded-lg shadow-2xl ">
       <blockquote className="text-2xl font-bold text-yellow-100">
         <p>“The charity you give will be your shade on the ‘Day of Judgment’”</p>
-        <footer className="text-lg font-semibold text-white">- Al-Quran</footer>
+        <footer className="text-lg font-semibold text-white">- Al-Hadith</footer>
         <button>
           <Link to="/donate" className="text-lg text-white bg-blue-600 hover:bg-blue-800 border-none p-2 rounded-lg">
             Donate Now

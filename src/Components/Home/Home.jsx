@@ -16,15 +16,18 @@ function Home() {
     
       <div className=" bg-gray-100 w-screen  ">
         
-        <Marquee pauseOnHover='true' direction='left' className='text-lg font-bold '>
-  <a href="#" className='hover:text-blue-800'>For spot admission under 'KALAM SCHOLARSHIP' contact at 
-    <a href="tel:+7654746192" className='text-orange-500 hover:text-orange-700'>
+        <Marquee pauseOnHover='true' direction='left' className='text-lg font-bold bg-gray-100 p-2'>
+  <a href="#" className='hover:text-blue-800'>
+    For spot admission under <span className='italic'>'KALAM SCHOLARSHIP'</span> contact at 
+    <a href="tel:+7654746192" className='text-orange-500 hover:text-orange-700 ml-2'>
       <span>7654746192</span>
     </a>
-     ** Donate for Flood relief in Bihar ** 
+    &nbsp;&nbsp;&nbsp;
+    <span className='ml-4'>** Donate blanket for needy people **</span>
   </a>
   &nbsp;&nbsp;&nbsp;
 </Marquee>
+
       <Quote />
       <WelcomeNote />
       <UpdateSection />

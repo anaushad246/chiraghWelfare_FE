@@ -2,20 +2,13 @@ import React from 'react';
 
 const events = [
   {
-    title: 'FREE MEDICAL CAMP',
-    date: '24-08-2024',
+    title: 'BLANKET DISTRIBUTION CAMP',
+    date: '25-12-2024',
     time: '10:00 AM - 03:00 PM',
-    location: 'Zahidi Unani Shifa Khana,Ward 05,Malmal',
-    // description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    location: 'Flood effected area and in slums',
+    
   },
-  // {
-  //   title: 'Event Title 2',
-  //   date: '2024-09-01',
-  //   time: '2:00 PM - 4:00 PM',
-  //   location: 'Venue 2',
-  //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  // },
-  // Add more events here
+  
 ];
 
 const Events = () => {

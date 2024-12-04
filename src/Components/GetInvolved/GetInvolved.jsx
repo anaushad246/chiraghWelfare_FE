@@ -52,7 +52,7 @@ function GetInvolved() {
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label htmlFor="name" className="block text-lg font-medium text-gray-700">Name:</label>
+          <label htmlFor="name" className="block text-lg font-medium text-gray-700">Name:<span className="text-red-500">*</span></label>
           <input
             type="text"
             name="name"
@@ -74,18 +74,22 @@ function GetInvolved() {
           />
         </div>
         <div>
-          <label htmlFor="mobile" className="block text-lg font-medium text-gray-700">Mobile:</label>
-          <input
-            type="tel"
-            name="mobile"
-            id="mobile"
-            value={formData.mobile}
-            onChange={handleChange}
-            className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-          />
-        </div>
+  <label htmlFor="mobile" className="block text-lg font-medium text-gray-700">
+    Mobile: <span className="text-red-500">*</span>
+  </label>
+  <input
+    required
+    type="tel"
+    name="mobile"
+    id="mobile"
+    value={formData.mobile}
+    onChange={handleChange}
+    className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+  />
+</div>
+
         <div>
-          <label htmlFor="email" className="block text-lg font-medium text-gray-700">Email:</label>
+          <label htmlFor="email" className="block text-lg font-medium text-gray-700">Email:<span className="text-red-500">*</span></label>
           <input
             type="email"
             name="email"

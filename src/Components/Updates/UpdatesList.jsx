@@ -4,6 +4,7 @@ import Marquee from 'react-fast-marquee';
 function UpdatesList() {
   const updates = [
     "Distributed 500 food packages this month",
+    "Target 1000 blankets distribution to needy peoples",
     "Launched new educational program for underprivileged children",
     "Upcoming medical camp in rural areas",
     "Partnership with local businesses for community support",

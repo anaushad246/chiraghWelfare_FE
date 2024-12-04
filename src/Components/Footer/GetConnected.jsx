@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faTwitter, faInstagram,  faYoutube, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF,  faInstagram,  faYoutube, faWhatsapp, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 function GetConnected() {
     const whatsappNumber = '7654746192'; // Replace with your WhatsApp number
   const message = 'Hello, I would like to inquire about...'; // Default message
@@ -11,7 +11,7 @@ function GetConnected() {
                 <FontAwesomeIcon icon={faFacebookF} size="lg" />
               </a>
               <a href="https://www.twitter.com/" className="text-neutral-600 dark:text-neutral-200">
-                <FontAwesomeIcon icon={faTwitter} size="lg" />
+                <FontAwesomeIcon icon={faXTwitter} size="lg" />
               </a>
               <a href="https://www.instagram.com/" className="text-neutral-600 dark:text-neutral-200">
                 <FontAwesomeIcon icon={faInstagram} size="lg" />
